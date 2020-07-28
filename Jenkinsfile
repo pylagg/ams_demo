@@ -9,7 +9,7 @@ pipeline
 	    stage("Code Checkout") {
                 	steps {
                 		git branch: 'master',
-                		url: 'https://github.com/pylagg/maven_demo.git'
+                		url: 'https://github.com/pylagg/ams_demo.git'
                   	}
               }
 	      stage('Build Stage') {
