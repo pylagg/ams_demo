@@ -30,12 +30,12 @@
   <distributionManagement>
     <repository>
         <id>central</id>
-        <name>DESKTOP-U44A200-releases</name>
+        <name>payalaggarwal-releases</name>
         <url>http://localhost:8081/artifactory/pipeline_artifact</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
-        <name>DESKTOP-U44A200-snapshots</name>
+        <name>payalaggarwal-snapshots</name>
         <url>http://localhost:8081/artifactory/pipeline_artifact</url>
     </snapshotRepository>
 </distributionManagement>
