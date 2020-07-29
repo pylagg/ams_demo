@@ -12,15 +12,15 @@ pipeline
                 		url: 'https://github.com/pylagg/ams_demo.git'
                   	}
               }
-	      stage('Build Stage') {
-			steps{
-				bat 'mvn clean package'
-			}
-		}
-		stage('Testing Stage')
+	     stage('Testing Stage')
 		{
 			steps{
 				 bat 'mvn test'
+			}
+		}
+		  stage('Build Stage') {
+			steps{
+				bat 'mvn clean package'
 			}
 		}    
 	    stage('SonarQube analysis') 
