@@ -11,6 +11,6 @@ FROM tomcat:8.5-alpine
 MAINTAINER Payal Aggarwal
 COPY --from=0 /app/ams_demo/tomcat-users.xml /usr/local/tomcat/conf/
 COPY --from=0 /app/ams_demo/context.xml /usr/local/tomcat/webapps/manager/META-INF/
-COPY --from=1 /app/ams_demo/target/*.war /usr/local/tomcat/webapps/
+COPY --from=1 */target/*.war /usr/local/tomcat/webapps/
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
